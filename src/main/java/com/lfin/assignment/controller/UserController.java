@@ -25,7 +25,9 @@ public class UserController {
         return ResponseEntity.ok().body(new ApiResult(userService.findAll(pageable)));
     }
 
-
-
+    @GetMapping("{id}")
+    public ResponseEntity<ApiResult> findById (@PathVariable Long id){
+        return ResponseEntity.ok().body(new ApiResult(userService.findById(id)));
+    }
 
 }

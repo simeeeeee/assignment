@@ -1,5 +1,6 @@
 package com.lfin.assignment.domain.entity;
 
+import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
 import com.lfin.assignment.domain.vo.UserVO;
 import org.junit.jupiter.api.Test;
 
@@ -20,5 +21,21 @@ class UserTest {
         assertEquals(userVO.getEmail(), user.getEmail());
         assertEquals(userVO.getTel(), user.getTel());
         assertEquals(userVO.hashPassword(userVO.getPassword()), user.getPassword());
+    }
+
+    @Test
+    void converToVo(){
+        User gildong = User.builder()
+                .tel("010-234-2344")
+                .name("고길동")
+                .email("whkd23@gmail.com")
+                .password("1245")
+                .build();
+
+        UserExceptPasswordVO userExceptPasswordVO = gildong.convertToVo();
+
+        assertEquals(userExceptPasswordVO.getEmail(), gildong.getEmail());
+        assertEquals(userExceptPasswordVO.getName(), gildong.getName());
+        assertEquals(userExceptPasswordVO.getTel(), gildong.getTel());
     }
 }

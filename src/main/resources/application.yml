@@ -20,13 +20,13 @@ spring:
   data:
     web:
       pageable:
-        one-indexed-parameters: true  # ??? ?? index ? 1? ??
+        one-indexed-parameters: true
         default-page-size: 10         # default page size = 10
   jpa:
     properties:
       hibernate:
-        format_sql: true              # ?? ???
-    show-sql: true                    # ?? ??
+        format_sql: true
+    show-sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/assignment?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root

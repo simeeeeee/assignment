@@ -2,6 +2,7 @@ package com.lfin.assignment.service;
 
 import com.lfin.assignment.common.TestDataConfiguration;
 import com.lfin.assignment.domain.entity.User;
+import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
 import com.lfin.assignment.domain.vo.UserVO;
 import com.lfin.assignment.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
@@ -69,14 +70,25 @@ class UserServiceTest {
     @Test
     void findAll(){
         Pageable pageable = PageRequest.of(0,3);
-        Page<User> userPage = userService.findAll(pageable);
+        Page<UserExceptPasswordVO> userPage = userService.findAll(pageable);
 
-        User user = userPage.getContent().get(0);
+        UserExceptPasswordVO userExceptPasswordVO = userPage.getContent().get(0);
 
         assertEquals(userPage.getSize(), 3);
-        assertEquals(user.getEmail(), "whdk2340@naver.com");
-        assertEquals(user.getName(), "gildong");
-        assertEquals(user.getTel(), "010-1123-1234");
+        assertEquals(userExceptPasswordVO.getEmail(), "whdk2340@naver.com");
+        assertEquals(userExceptPasswordVO.getName(), "gildong");
+        assertEquals(userExceptPasswordVO.getTel(), "010-1123-1234");
+    }
 
+    @Test
+    void findById(){
+        Long id = 3L;
+
+        UserExceptPasswordVO byId = userService.findById(id);
+
+        assertEquals(byId.getUserId(), id);
+        assertEquals(byId.getName(), "gildong");
+        assertEquals(byId.getEmail(), "whdk237@naver.com");
+        assertEquals(byId.getTel(), "010-2345-3434");
     }
 }
