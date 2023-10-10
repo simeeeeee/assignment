@@ -4,6 +4,8 @@ import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserVO;
 import com.lfin.assignment.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,4 +23,17 @@ public class UserService {
             userRepository.save(user);
         }else throw new RuntimeException("이미 존재하는 이메일입니다.");
     }
+
+    /**
+     * 전체 user정보 페이징하여 조회
+     * @param pageable
+     * @return
+     */
+    public Page<User> findAll(Pageable pageable){
+        return userRepository.findAll(pageable);
+    }
+
+
+
+
 }
