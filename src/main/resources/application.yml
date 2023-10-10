@@ -1,3 +1,7 @@
+server:
+  port:
+    8099
+
 logging:
   file:
     name: ./logs/app.log
@@ -41,3 +45,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 logging.level:
   org.hibernate.orm.jdbc.bind: trace
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/assignment?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: assignment_user
+    password: password_for_test
+    driver-class-name: com.mysql.cj.jdbc.Driver
