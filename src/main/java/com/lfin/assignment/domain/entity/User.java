@@ -24,7 +24,6 @@ public class User {
     private String password;
     @NotEmpty
     private String name;
-    @NotEmpty
     private String tel;
 
     public static User createUser(UserVO userVO){
