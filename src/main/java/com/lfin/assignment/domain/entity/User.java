@@ -13,10 +13,10 @@ import org.modelmapper.ModelMapper;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private Long id;
     @NotEmpty
     @Column(unique = true)
     private String email;
@@ -29,7 +29,7 @@ public class User {
     public static User createUser(UserVO userVO){
         return User.builder()
                 .email(userVO.getEmail())
-                .password(userVO.hashPassword(userVO.getPassword()))
+                .password(userVO.encodeBcrypt(userVO.getPassword()))
                 .name(userVO.getName())
                 .tel(userVO.getTel())
                 .build();
