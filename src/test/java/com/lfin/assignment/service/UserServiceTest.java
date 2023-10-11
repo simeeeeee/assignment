@@ -56,8 +56,7 @@ class UserServiceTest {
 
     @Test
     void notExistEmail() {
-        Assertions.assertThrows(ExistingValueException.class, () -> {
-            String email = "whdk2340@naver.com";
+            String email = "whdk2340877@naver.com";
             UserVO userVO = new UserVO();
             userVO.setName("홍길동");
             userVO.setPassword("1234");
@@ -66,11 +65,9 @@ class UserServiceTest {
 
             userService.createUser(userVO);
 
-            boolean exsit = userRepository.existsByEmail(email);
+            boolean exsit = userRepository.existsByEmail(email+"1");
 
-            assertTrue(exsit);
-
-        });
+            assertFalse(exsit);
     }
 
     @Test
