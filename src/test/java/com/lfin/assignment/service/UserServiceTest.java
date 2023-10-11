@@ -49,7 +49,7 @@ class UserServiceTest {
     }
 
     @Test
-    void existEmail() {
+    void notExistEmail() {
         Assertions.assertThrows(RuntimeException.class, () -> {
             String email = "whdk2340@naver.com";
             UserVO userVO = new UserVO();
@@ -90,5 +90,138 @@ class UserServiceTest {
         assertEquals(byId.getName(), "gildong");
         assertEquals(byId.getEmail(), "whdk237@naver.com");
         assertEquals(byId.getTel(), "010-2345-3434");
+    }
+
+    @Test
+    void update(){
+        Long id = 3L;
+        String name = "test_name";
+        String tel = "010-2312-1111";
+        String password = "123";
+        UserVO userVO = new UserVO();
+        userVO.setName(name);
+        userVO.setTel(tel);
+        String hashPassword = userVO.hashPassword(password);
+        userVO.setPassword(hashPassword);
+
+        userService.update(id, userVO);
+
+        User user = userRepository.findById(id).orElseThrow();
+
+        assertEquals(user.getUserId(), id);
+        assertEquals(user.getTel(), tel);
+        assertEquals(user.getName(), name);
+        assertEquals(user.getPassword(), hashPassword);
+    }
+
+    @Test
+    void updateWithName(){
+        Long id = 3L;
+        String name = "test_name";
+        UserVO userVO = new UserVO();
+        userVO.setName(name);
+
+        userService.update(id, userVO);
+
+        User user = userRepository.findById(id).orElseThrow();
+
+        assertEquals(user.getUserId(), id);
+        assertEquals(user.getName(), name);
+    }
+
+    @Test
+    void updateWithTel(){
+        Long id = 3L;
+        String tel = "010-2312-1111";
+        UserVO userVO = new UserVO();
+        userVO.setTel(tel);
+
+        userService.update(id, userVO);
+
+        User user = userRepository.findById(id).orElseThrow();
+
+        assertEquals(user.getUserId(), id);
+        assertEquals(user.getTel(), tel);
+    }
+
+    @Test
+    void updateWithPassword(){
+        Long id = 3L;
+        String password = "123";
+        UserVO userVO = new UserVO();
+        String hashPassword = userVO.hashPassword(password);
+        userVO.setPassword(hashPassword);
+
+        userService.update(id, userVO);
+
+        User user = userRepository.findById(id).orElseThrow();
+
+        assertEquals(user.getUserId(), id);
+        assertEquals(user.getPassword(), hashPassword);
+    }
+    @Test
+    void changeEmailException(){
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            Long id = 3L;
+            String name = "test_name";
+            String tel = "010-2312-1111";
+            UserVO userVO = new UserVO();
+            userVO.setName(name);
+            userVO.setTel(tel);
+
+            userService.update(id, userVO);
+
+            User user = userRepository.findById(id).orElseThrow();
+
+            assertEquals(user.getUserId(), id);
+            assertEquals(user.getTel(), tel);
+            assertEquals(user.getName(), name);
+        });
+    }
+
+    @Test
+    void checkUserInfo(){
+        String email = "whdk2340@naver.com";
+        String password = "12345";
+
+        UserVO userVO = new UserVO();
+        userVO.setEmail(email);
+        userVO.setPassword(password);
+
+        boolean b = userService.checkUserInfo(userVO);
+
+        assertTrue(b);
+    }
+
+    @Test
+    void notMatchingPassword(){
+        Assertions.assertThrows(RuntimeException.class, () ->{
+            String email = "whdk2340@naver.com";
+            String password = "123";
+
+            UserVO userVO = new UserVO();
+            userVO.setEmail(email);
+            userVO.setPassword(password);
+
+            boolean b = userService.checkUserInfo(userVO);
+
+            assertTrue(b);
+        });
+    }
+
+    @Test
+    void notExistingEmail(){
+        Assertions.assertThrows(NoSuchElementException.class, () ->{
+            String email = "whdk23@naver.com";
+            String password = "12345";
+
+            UserVO userVO = new UserVO();
+            userVO.setEmail(email);
+            userVO.setPassword(password);
+
+            boolean b = userService.checkUserInfo(userVO);
+
+            assertTrue(b);
+        });
     }
 }

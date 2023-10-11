@@ -14,7 +14,7 @@ public class UserVO {
     private String tel;
 
     public String hashPassword(String password) {
-        // SHA-256 또는 다른 해시 알고리즘을 사용하여 비밀번호를 해싱합니다.
+        // SHA-256 해시 알고리즘을 사용하여 비밀번호를 해싱
         return DigestUtils.sha256Hex(password);
     }
 }

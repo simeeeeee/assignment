@@ -4,6 +4,7 @@ import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
 import com.lfin.assignment.domain.vo.UserVO;
 import com.lfin.assignment.repository.UserRepository;
+import io.micrometer.common.util.StringUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -44,4 +45,35 @@ public class UserService {
         return userRepository.findById(id).orElseThrow().convertToVo();
     }
 
+    public void update(Long id, UserVO userVO){
+        User user = userRepository.findById(id).orElseThrow();
+
+            if (!StringUtils.isEmpty(userVO.getEmail())) {
+                throw new RuntimeException("이메일은 변경할 수 없습니다.");
+            }
+            if (!StringUtils.isEmpty(userVO.getPassword())) {
+                String newPassword = userVO.hashPassword(userVO.getPassword());
+                user.setPassword(newPassword);
+            }
+
+            if (!StringUtils.isEmpty(userVO.getTel())) {
+                user.setTel(userVO.getTel());
+            }
+
+            if (!StringUtils.isEmpty(userVO.getName())) {
+                user.setName(userVO.getName());
+            }
+            userRepository.save(user);
+
+    }
+
+    public boolean checkUserInfo(UserVO userVO){
+        //기존 암호와 동일한지 확인
+        User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow();
+        String currentPassword = user.getPassword();
+        String inputPassword = userVO.hashPassword(userVO.getPassword());
+        if(currentPassword.equals(inputPassword)){
+            return true;
+        }else throw new RuntimeException("기존의 비밀번호와 일치하지 않습니다.");
+    }
 }
