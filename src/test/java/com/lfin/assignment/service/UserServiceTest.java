@@ -1,6 +1,10 @@
 package com.lfin.assignment.service;
 
 import com.lfin.assignment.common.TestDataConfiguration;
+import com.lfin.assignment.common.exceptions.ExistingValueException;
+import com.lfin.assignment.common.exceptions.NotChangingValueException;
+import com.lfin.assignment.common.exceptions.NotMatchingValueException;
+import com.lfin.assignment.common.exceptions.ResourceNotFoundException;
 import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
 import com.lfin.assignment.domain.vo.UserVO;
@@ -52,7 +56,7 @@ class UserServiceTest {
 
     @Test
     void notExistEmail() {
-        Assertions.assertThrows(RuntimeException.class, () -> {
+        Assertions.assertThrows(ExistingValueException.class, () -> {
             String email = "whdk2340@naver.com";
             UserVO userVO = new UserVO();
             userVO.setName("홍길동");
@@ -163,7 +167,7 @@ class UserServiceTest {
     }
     @Test
     void changeEmailException(){
-        Assertions.assertThrows(RuntimeException.class, () -> {
+        Assertions.assertThrows(NotChangingValueException.class, () -> {
             Long id = 3L;
             String name = "test_name";
             String tel = "010-2312-1111";
@@ -199,7 +203,7 @@ class UserServiceTest {
 
     @Test
     void notMatchingPassword(){
-        Assertions.assertThrows(RuntimeException.class, () ->{
+        Assertions.assertThrows(NotMatchingValueException.class, () ->{
             String email = "whdk2340@naver.com";
             String password = "123";
 
@@ -215,7 +219,7 @@ class UserServiceTest {
 
     @Test
     void notExistingEmail(){
-        Assertions.assertThrows(NoSuchElementException.class, () ->{
+        Assertions.assertThrows(ResourceNotFoundException.class, () ->{
             String email = "whdk23@naver.com";
             String password = "12345";
 

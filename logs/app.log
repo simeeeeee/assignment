@@ -1783,3 +1783,246 @@ java.lang.RuntimeException: 이미 존재하는 이메일입니다.
    "tel": "010-2343-3434",
    "password": "12345"
 }	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1696993751102}	 처리시간 : 14
+2023-10-11T14:24:26.604+09:00  INFO 29635 --- [Test worker] c.l.assignment.service.UserServiceTest   : Starting UserServiceTest using Java 19.0.2 with PID 29635 (started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T14:24:26.606+09:00  INFO 29635 --- [Test worker] c.l.assignment.service.UserServiceTest   : The following 1 profile is active: "test"
+2023-10-11T14:24:27.419+09:00  INFO 29635 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T14:24:27.480+09:00  INFO 29635 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-10-11T14:24:27.568+09:00  WARN 29635 --- [Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T14:24:27.854+09:00  INFO 29635 --- [Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-10-11T14:24:28.096+09:00  INFO 29635 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-10-11T14:24:28.419+09:00  INFO 29635 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2023-10-11T14:24:28.421+09:00  INFO 29635 --- [Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2023-10-11T14:24:28.441+09:00  INFO 29635 --- [Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7855 MB
+2023-10-11T14:24:28.470+09:00  INFO 29635 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Creating container for image: testcontainers/ryuk:0.5.1
+2023-10-11T14:24:29.005+09:00  INFO 29635 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 is starting: 3541948ab9f315fa6c240c607be6377a67bd9bee8e981d4646b4e6326c46c181
+2023-10-11T14:24:29.412+09:00  INFO 29635 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 started in PT0.960159S
+2023-10-11T14:24:29.420+09:00  INFO 29635 --- [Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-10-11T14:24:29.421+09:00  INFO 29635 --- [Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2023-10-11T14:24:29.422+09:00  INFO 29635 --- [Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2023-10-11T14:24:29.426+09:00  INFO 29635 --- [Test worker] tc.mysql:8.0.32                          : Creating container for image: mysql:8.0.32
+2023-10-11T14:24:29.488+09:00  INFO 29635 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 is starting: c2830e7a8c8f19fe551036b76f14281e1f63bcb98c8db638c9200e8c37d270e2
+2023-10-11T14:24:29.737+09:00  INFO 29635 --- [Test worker] tc.mysql:8.0.32                          : Waiting for database connection to become available at jdbc:mysql://localhost:61669/assignment using query 'SELECT 1'
+2023-10-11T14:24:42.175+09:00  INFO 29635 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 started in PT12.749807S
+2023-10-11T14:24:42.176+09:00  INFO 29635 --- [Test worker] tc.mysql:8.0.32                          : Container is started (JDBC URL: jdbc:mysql://localhost:61669/assignment)
+2023-10-11T14:24:42.185+09:00  INFO 29635 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from init.sql
+2023-10-11T14:24:42.268+09:00  INFO 29635 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from init.sql in 64 ms.
+2023-10-11T14:24:42.367+09:00  INFO 29635 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T14:24:42.533+09:00  INFO 29635 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55f6f965
+2023-10-11T14:24:42.535+09:00  INFO 29635 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T14:24:42.580+09:00  INFO 29635 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T14:24:42.645+09:00  INFO 29635 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T14:24:42.649+09:00  INFO 29635 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T14:24:42.827+09:00  INFO 29635 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:24:42.971+09:00  INFO 29635 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T14:24:43.050+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ba3c03d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@9a37591)
+2023-10-11T14:24:43.050+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@749c0669) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4468c0ea)
+2023-10-11T14:24:43.050+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@41cf4272) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@53d2b827)
+2023-10-11T14:24:43.051+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4769537a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4504a4ed)
+2023-10-11T14:24:43.051+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7ee3a2ed) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@38363e96)
+2023-10-11T14:24:43.051+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35c95869) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@558aa1f1)
+2023-10-11T14:24:43.051+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@361d8567) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3fd6dfbc)
+2023-10-11T14:24:43.052+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4023d23f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@402676e3)
+2023-10-11T14:24:43.052+09:00 DEBUG 29635 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1a4ae53d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1368e2f7)
+2023-10-11T14:24:43.209+09:00  INFO 29635 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:24:43.881+09:00  INFO 29635 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T14:24:43.884+09:00  INFO 29635 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:24:44.465+09:00  WARN 29635 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T14:24:44.978+09:00  INFO 29635 --- [Test worker] c.l.assignment.service.UserServiceTest   : Started UserServiceTest in 18.677 seconds (process running for 19.86)
+2023-10-11T14:24:46.142+09:00  INFO 29635 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:24:46.146+09:00  INFO 29635 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T14:24:46.214+09:00  INFO 29635 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T14:29:40.084+09:00  INFO 29824 --- [Test worker] c.l.assignment.service.UserServiceTest   : Starting UserServiceTest using Java 19.0.2 with PID 29824 (started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T14:29:40.086+09:00  INFO 29824 --- [Test worker] c.l.assignment.service.UserServiceTest   : The following 1 profile is active: "test"
+2023-10-11T14:29:40.808+09:00  INFO 29824 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T14:29:40.865+09:00  INFO 29824 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-11T14:29:40.956+09:00  WARN 29824 --- [Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T14:29:41.201+09:00  INFO 29824 --- [Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-10-11T14:29:41.413+09:00  INFO 29824 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-10-11T14:29:41.681+09:00  INFO 29824 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2023-10-11T14:29:41.683+09:00  INFO 29824 --- [Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2023-10-11T14:29:41.702+09:00  INFO 29824 --- [Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7855 MB
+2023-10-11T14:29:41.724+09:00  INFO 29824 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Creating container for image: testcontainers/ryuk:0.5.1
+2023-10-11T14:29:42.164+09:00  INFO 29824 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 is starting: 6cee1097ddc1f1f3be10a1251bab74bcbae96dbdce1756b7b00d6d6b7d37358b
+2023-10-11T14:29:42.537+09:00  INFO 29824 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 started in PT0.826751S
+2023-10-11T14:29:42.545+09:00  INFO 29824 --- [Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-10-11T14:29:42.546+09:00  INFO 29824 --- [Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2023-10-11T14:29:42.547+09:00  INFO 29824 --- [Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2023-10-11T14:29:42.551+09:00  INFO 29824 --- [Test worker] tc.mysql:8.0.32                          : Creating container for image: mysql:8.0.32
+2023-10-11T14:29:42.634+09:00  INFO 29824 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 is starting: 5562315c21b422ee21a84a9105d48c258335cab161f50fc99630fcc65ec2733b
+2023-10-11T14:29:42.884+09:00  INFO 29824 --- [Test worker] tc.mysql:8.0.32                          : Waiting for database connection to become available at jdbc:mysql://localhost:61822/assignment using query 'SELECT 1'
+2023-10-11T14:29:55.112+09:00  INFO 29824 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 started in PT12.560795S
+2023-10-11T14:29:55.112+09:00  INFO 29824 --- [Test worker] tc.mysql:8.0.32                          : Container is started (JDBC URL: jdbc:mysql://localhost:61822/assignment)
+2023-10-11T14:29:55.120+09:00  INFO 29824 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from init.sql
+2023-10-11T14:29:55.171+09:00  INFO 29824 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from init.sql in 51 ms.
+2023-10-11T14:29:55.270+09:00  INFO 29824 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T14:29:55.445+09:00  INFO 29824 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56ba8e8c
+2023-10-11T14:29:55.447+09:00  INFO 29824 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T14:29:55.498+09:00  INFO 29824 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T14:29:55.564+09:00  INFO 29824 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T14:29:55.567+09:00  INFO 29824 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T14:29:55.741+09:00  INFO 29824 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:29:55.942+09:00  INFO 29824 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T14:29:56.031+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@208185c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1831447c)
+2023-10-11T14:29:56.031+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7741507c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@37a0fc8c)
+2023-10-11T14:29:56.031+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ba3c03d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@9a37591)
+2023-10-11T14:29:56.031+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@749c0669) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4468c0ea)
+2023-10-11T14:29:56.031+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41cf4272) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53d2b827)
+2023-10-11T14:29:56.032+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4769537a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4504a4ed)
+2023-10-11T14:29:56.032+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ee3a2ed) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@38363e96)
+2023-10-11T14:29:56.032+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@35c95869) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@558aa1f1)
+2023-10-11T14:29:56.032+09:00 DEBUG 29824 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@361d8567) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3fd6dfbc)
+2023-10-11T14:29:56.193+09:00  INFO 29824 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:29:56.816+09:00  INFO 29824 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T14:29:56.819+09:00  INFO 29824 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:29:57.375+09:00  WARN 29824 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T14:29:57.852+09:00  INFO 29824 --- [Test worker] c.l.assignment.service.UserServiceTest   : Started UserServiceTest in 18.072 seconds (process running for 19.189)
+2023-10-11T14:29:58.952+09:00  INFO 29824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:29:58.956+09:00  INFO 29824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T14:29:58.975+09:00  INFO 29824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T14:30:33.115+09:00  INFO 29871 --- [Test worker] c.l.assignment.service.UserServiceTest   : Starting UserServiceTest using Java 19.0.2 with PID 29871 (started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T14:30:33.117+09:00  INFO 29871 --- [Test worker] c.l.assignment.service.UserServiceTest   : The following 1 profile is active: "test"
+2023-10-11T14:30:33.871+09:00  INFO 29871 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T14:30:33.928+09:00  INFO 29871 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-11T14:30:34.022+09:00  WARN 29871 --- [Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T14:30:34.277+09:00  INFO 29871 --- [Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2023-10-11T14:30:34.466+09:00  INFO 29871 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2023-10-11T14:30:34.731+09:00  INFO 29871 --- [Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2023-10-11T14:30:34.732+09:00  INFO 29871 --- [Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2023-10-11T14:30:34.752+09:00  INFO 29871 --- [Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 24.0.6
+  API Version: 1.43
+  Operating System: Docker Desktop
+  Total Memory: 7855 MB
+2023-10-11T14:30:34.796+09:00  INFO 29871 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Creating container for image: testcontainers/ryuk:0.5.1
+2023-10-11T14:30:35.198+09:00  INFO 29871 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 is starting: bf4feacd7d69d42a4dbfda5a9f2f232d68a2dcdf0dafa1c5ba841f6929493d10
+2023-10-11T14:30:35.552+09:00  INFO 29871 --- [Test worker] tc.testcontainers/ryuk:0.5.1             : Container testcontainers/ryuk:0.5.1 started in PT0.790924S
+2023-10-11T14:30:35.567+09:00  INFO 29871 --- [Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2023-10-11T14:30:35.567+09:00  INFO 29871 --- [Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2023-10-11T14:30:35.568+09:00  INFO 29871 --- [Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2023-10-11T14:30:35.572+09:00  INFO 29871 --- [Test worker] tc.mysql:8.0.32                          : Creating container for image: mysql:8.0.32
+2023-10-11T14:30:35.638+09:00  INFO 29871 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 is starting: d9793fd86b96d75a6898ac7b6dac9a060f2504f3eb26bdb149f7e8ae62fe606c
+2023-10-11T14:30:35.872+09:00  INFO 29871 --- [Test worker] tc.mysql:8.0.32                          : Waiting for database connection to become available at jdbc:mysql://localhost:61954/assignment using query 'SELECT 1'
+2023-10-11T14:30:47.549+09:00  INFO 29871 --- [Test worker] tc.mysql:8.0.32                          : Container mysql:8.0.32 started in PT11.976793S
+2023-10-11T14:30:47.550+09:00  INFO 29871 --- [Test worker] tc.mysql:8.0.32                          : Container is started (JDBC URL: jdbc:mysql://localhost:61954/assignment)
+2023-10-11T14:30:47.556+09:00  INFO 29871 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executing database script from init.sql
+2023-10-11T14:30:47.609+09:00  INFO 29871 --- [Test worker] org.testcontainers.ext.ScriptUtils       : Executed database script from init.sql in 53 ms.
+2023-10-11T14:30:47.706+09:00  INFO 29871 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T14:30:47.870+09:00  INFO 29871 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56ba8e8c
+2023-10-11T14:30:47.872+09:00  INFO 29871 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T14:30:47.913+09:00  INFO 29871 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T14:30:47.964+09:00  INFO 29871 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T14:30:47.967+09:00  INFO 29871 --- [Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T14:30:48.111+09:00  INFO 29871 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:30:48.246+09:00  INFO 29871 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T14:30:48.321+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@208185c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1831447c)
+2023-10-11T14:30:48.321+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7741507c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@37a0fc8c)
+2023-10-11T14:30:48.321+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ba3c03d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@9a37591)
+2023-10-11T14:30:48.321+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@749c0669) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4468c0ea)
+2023-10-11T14:30:48.322+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@41cf4272) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53d2b827)
+2023-10-11T14:30:48.322+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4769537a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4504a4ed)
+2023-10-11T14:30:48.322+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ee3a2ed) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@38363e96)
+2023-10-11T14:30:48.322+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@35c95869) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@558aa1f1)
+2023-10-11T14:30:48.323+09:00 DEBUG 29871 --- [Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@361d8567) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3fd6dfbc)
+2023-10-11T14:30:48.474+09:00  INFO 29871 --- [Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:30:49.092+09:00  INFO 29871 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T14:30:49.108+09:00  INFO 29871 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:30:49.652+09:00  WARN 29871 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T14:30:50.114+09:00  INFO 29871 --- [Test worker] c.l.assignment.service.UserServiceTest   : Started UserServiceTest in 17.273 seconds (process running for 18.333)
+2023-10-11T14:30:51.132+09:00  INFO 29871 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:30:51.136+09:00  INFO 29871 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T14:30:51.154+09:00  INFO 29871 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T14:31:28.269+09:00  INFO 29914 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 29914 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T14:31:28.271+09:00  INFO 29914 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T14:31:28.934+09:00  INFO 29914 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T14:31:28.980+09:00  INFO 29914 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2023-10-11T14:31:29.056+09:00  WARN 29914 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T14:31:29.434+09:00  INFO 29914 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T14:31:29.443+09:00  INFO 29914 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T14:31:29.444+09:00  INFO 29914 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T14:31:29.516+09:00  INFO 29914 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T14:31:29.516+09:00  INFO 29914 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2023-10-11T14:31:29.620+09:00  INFO 29914 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T14:31:29.904+09:00  INFO 29914 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@795b66d
+2023-10-11T14:31:29.905+09:00  INFO 29914 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T14:31:29.938+09:00  INFO 29914 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T14:31:29.975+09:00  INFO 29914 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T14:31:29.977+09:00  INFO 29914 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T14:31:30.074+09:00  INFO 29914 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:31:30.192+09:00  INFO 29914 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@131c0b6f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7f030c72)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@68d8ae27) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18513c23)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6be50b35) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@ce2eaa7)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2166c48a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@304744a1)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@73385d3f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6814262d)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fc1fd31) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@75a9cc24)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4449a60b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@da5d5e1)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d7d8911) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@460eb276)
+2023-10-11T14:31:30.263+09:00 DEBUG 29914 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ffe3d42) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cd7f381)
+2023-10-11T14:31:30.380+09:00  INFO 29914 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:31:30.894+09:00  INFO 29914 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T14:31:30.897+09:00  INFO 29914 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:31:31.249+09:00  WARN 29914 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T14:31:31.628+09:00  INFO 29914 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T14:31:31.637+09:00  INFO 29914 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 3.753 seconds (process running for 4.257)
+2023-10-11T14:34:26.200+09:00  INFO 29914 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T14:34:26.202+09:00  INFO 29914 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T14:34:26.205+09:00  INFO 29914 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-10-11T14:34:26.528+09:00  INFO 29914 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T05:34:26.211625Z	 요청전문 : {
+   "email" : "whdk0@naver.com",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":"CLIENT_EXIST_VALUE_REQUEST","timestamp":1697002466495}	 처리시간 : 316
+2023-10-11T14:40:40.832+09:00  INFO 29914 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:40:40.836+09:00  INFO 29914 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T14:40:40.843+09:00  INFO 29914 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T14:40:44.575+09:00  INFO 30218 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 30218 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T14:40:44.582+09:00  INFO 30218 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T14:40:45.566+09:00  INFO 30218 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T14:40:45.631+09:00  INFO 30218 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-10-11T14:40:45.752+09:00  WARN 30218 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T14:40:46.232+09:00  INFO 30218 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T14:40:46.255+09:00  INFO 30218 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T14:40:46.255+09:00  INFO 30218 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T14:40:46.336+09:00  INFO 30218 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T14:40:46.336+09:00  INFO 30218 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1665 ms
+2023-10-11T14:40:46.470+09:00  INFO 30218 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T14:40:46.774+09:00  INFO 30218 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3360283
+2023-10-11T14:40:46.775+09:00  INFO 30218 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T14:40:46.811+09:00  INFO 30218 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T14:40:46.852+09:00  INFO 30218 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T14:40:46.854+09:00  INFO 30218 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T14:40:46.959+09:00  INFO 30218 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:40:47.093+09:00  INFO 30218 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T14:40:47.186+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2abedbbd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c56eba5)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6231f77a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@290c266c)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75b363c3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ea3a513)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3c4059a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b336cc8)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2570b316) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56881196)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@75c33608) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@25464154)
+2023-10-11T14:40:47.187+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@58ebee9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@131c0b6f)
+2023-10-11T14:40:47.188+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7f030c72) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@68d8ae27)
+2023-10-11T14:40:47.188+09:00 DEBUG 30218 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18513c23) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6be50b35)
+2023-10-11T14:40:47.345+09:00  INFO 30218 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T14:40:47.956+09:00  INFO 30218 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T14:40:47.959+09:00  INFO 30218 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T14:40:48.368+09:00  WARN 30218 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T14:40:48.768+09:00  INFO 30218 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T14:40:48.776+09:00  INFO 30218 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.864 seconds (process running for 5.398)
+2023-10-11T14:40:56.313+09:00  INFO 30218 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T14:40:56.314+09:00  INFO 30218 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T14:40:56.315+09:00  INFO 30218 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T14:40:56.585+09:00  INFO 30218 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T05:40:56.320025Z	 요청전문 : {
+   "email" : "whdk0@naver.com",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"1006","message":"이미 존재하는 값입니다.","data":null,"timestamp":1697002856559}	 처리시간 : 265
