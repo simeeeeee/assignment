@@ -224,4 +224,36 @@ class UserServiceTest {
             assertTrue(b);
         });
     }
+
+    @Test
+    void deletedById(){
+        Long id = 4L;
+        User user = userRepository.findById(id).orElseThrow();
+        String email = user.getEmail();
+        boolean beforeExist = userRepository.existsByEmail(email);
+
+        userService.deletedById(id);
+
+        boolean afterExist = userRepository.existsByEmail(email);
+
+        assertTrue(beforeExist);
+        assertFalse(afterExist);
+    }
+
+    @Test
+    void deletedByNotExistId(){
+        Assertions.assertThrows(NoSuchElementException.class, () ->{
+            Long id = 5L;
+            User user = userRepository.findById(id).orElseThrow();
+            String email = user.getEmail();
+            boolean beforeExist = userRepository.existsByEmail(email);
+
+            userService.deletedById(id);
+
+            boolean afterExist = userRepository.existsByEmail(email);
+
+            assertTrue(beforeExist);
+            assertFalse(afterExist);
+        });
+    }
 }
