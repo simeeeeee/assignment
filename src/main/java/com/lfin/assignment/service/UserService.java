@@ -1,5 +1,9 @@
 package com.lfin.assignment.service;
 
+import com.lfin.assignment.common.exceptions.ExistingValueException;
+import com.lfin.assignment.common.exceptions.NotChangingValueException;
+import com.lfin.assignment.common.exceptions.NotMatchingValueException;
+import com.lfin.assignment.common.exceptions.ResourceNotFoundException;
 import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
 import com.lfin.assignment.domain.vo.UserVO;
@@ -27,7 +31,7 @@ public class UserService {
         if(!userRepository.existsByEmail(userVO.getEmail())){
             User user = User.createUser(userVO);
             userRepository.save(user);
-        }else throw new RuntimeException("이미 존재하는 이메일입니다.");
+        }else throw new ExistingValueException();
     }
 
     /**
@@ -43,14 +47,14 @@ public class UserService {
     }
 
     public UserExceptPasswordVO findById(Long id){
-        return userRepository.findById(id).orElseThrow().convertToVo();
+        return userRepository.findById(id).orElseThrow(ResourceNotFoundException::new).convertToVo();
     }
 
     public void update(Long id, UserVO userVO){
         User user = userRepository.findById(id).orElseThrow();
 
             if (!StringUtils.isEmpty(userVO.getEmail())) {
-                throw new RuntimeException("이메일은 변경할 수 없습니다.");
+                throw new NotChangingValueException();
             }
             if (!StringUtils.isEmpty(userVO.getPassword())) {
                 String newPassword = userVO.hashPassword(userVO.getPassword());
@@ -76,12 +80,12 @@ public class UserService {
      */
     public boolean checkUserInfo(UserVO userVO){
         //기존 암호와 동일한지 확인
-        User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow();
+        User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow(ResourceNotFoundException::new);
         String currentPassword = user.getPassword();
         String inputPassword = userVO.hashPassword(userVO.getPassword());
         if(currentPassword.equals(inputPassword)){
             return true;
-        }else throw new RuntimeException("기존의 비밀번호와 일치하지 않습니다.");
+        }else throw new NotMatchingValueException();
     }
 
     public void deletedById(Long id){

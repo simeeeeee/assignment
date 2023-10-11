@@ -29,4 +29,9 @@ public class ApiResult {
         this.message = ResultStatus.REQUEST_SUCCESS.getMessage();
         this.data = data;
     }
+
+    public ApiResult(ResultStatus status){
+        this.status = status.getStatus();
+        this.message = status.getMessage();
+    }
 }
