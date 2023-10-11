@@ -32,6 +32,7 @@ public class UserService {
 
     /**
      * 전체 user정보 페이징하여 조회
+     * 비밀번호는 조회 목록에 나오지 않도록 mapper활용
      * @param pageable
      * @return
      */
@@ -67,6 +68,12 @@ public class UserService {
 
     }
 
+    /**
+     * Email과 password를 입력받아 데이터베이스에 저장된 정보와 일치하는지 check
+     * 일치하면 true를 return, 일치하지 않을 시, 예외 발생
+     * @param userVO
+     * @return
+     */
     public boolean checkUserInfo(UserVO userVO){
         //기존 암호와 동일한지 확인
         User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow();
@@ -75,5 +82,9 @@ public class UserService {
         if(currentPassword.equals(inputPassword)){
             return true;
         }else throw new RuntimeException("기존의 비밀번호와 일치하지 않습니다.");
+    }
+
+    public void deletedById(Long id){
+        userRepository.deleteById(id);
     }
 }

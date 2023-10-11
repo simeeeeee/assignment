@@ -41,4 +41,9 @@ public class UserController {
         return ResponseEntity.ok().body(new ApiResult(userService.checkUserInfo(userVO)));
     }
 
+    @DeleteMapping("{id}")
+    public ResponseEntity<ApiResult> deletedById(@PathVariable Long id){
+        userService.deletedById(id);
+        return ResponseEntity.ok().body(new ApiResult());
+    }
 }
