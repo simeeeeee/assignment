@@ -1584,3 +1584,202 @@ java.util.NoSuchElementException: No value present
 2023-10-11T10:57:13.747+09:00  INFO 24104 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-10-11T10:57:13.750+09:00  INFO 24104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-10-11T10:57:13.767+09:00  INFO 24104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T12:04:16.972+09:00  INFO 26370 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 26370 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T12:04:16.975+09:00  INFO 26370 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T12:04:17.854+09:00  INFO 26370 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T12:04:17.926+09:00  INFO 26370 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-11T12:04:17.996+09:00  WARN 26370 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T12:04:18.425+09:00  INFO 26370 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T12:04:18.436+09:00  INFO 26370 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T12:04:18.436+09:00  INFO 26370 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T12:04:18.521+09:00  INFO 26370 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T12:04:18.521+09:00  INFO 26370 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1487 ms
+2023-10-11T12:04:18.661+09:00  INFO 26370 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T12:04:19.004+09:00  INFO 26370 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@407b8435
+2023-10-11T12:04:19.006+09:00  INFO 26370 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T12:04:19.053+09:00  INFO 26370 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T12:04:19.121+09:00  INFO 26370 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T12:04:19.123+09:00  INFO 26370 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T12:04:19.257+09:00  INFO 26370 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:04:19.414+09:00  INFO 26370 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T12:04:19.519+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3350ab4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7827d7b)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@646cb2e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e7a9db7)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5315266) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@11cc9e1e)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@216328b2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5b0e9e0c)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@54234569) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@21ea1d9d)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@19f497aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@36a58466)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@78e387d6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@9147ba2)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3460e4ed) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2efcc0b3)
+2023-10-11T12:04:19.520+09:00 DEBUG 26370 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4a453f8d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@60a6840c)
+2023-10-11T12:04:19.664+09:00  INFO 26370 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:04:20.488+09:00  INFO 26370 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T12:04:20.491+09:00  INFO 26370 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T12:04:20.955+09:00  WARN 26370 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T12:04:21.435+09:00  INFO 26370 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T12:04:21.444+09:00  INFO 26370 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.255 seconds (process running for 5.915)
+2023-10-11T12:04:28.362+09:00  INFO 26370 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T12:04:28.372+09:00  INFO 26370 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T12:04:28.374+09:00  INFO 26370 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T12:04:28.663+09:00  INFO 26370 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:04:28.379453Z	 요청전문 : 	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":4,"last":true,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":4,"first":true,"empty":false},"timestamp":1696993468588}	 처리시간 : 284
+2023-10-11T12:05:50.753+09:00  INFO 26370 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T12:05:50.756+09:00  INFO 26370 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T12:05:50.764+09:00  INFO 26370 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T12:05:54.643+09:00  INFO 26429 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 26429 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T12:05:54.645+09:00  INFO 26429 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T12:05:55.721+09:00  INFO 26429 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T12:05:55.788+09:00  INFO 26429 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-10-11T12:05:55.911+09:00  WARN 26429 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T12:05:56.384+09:00  INFO 26429 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T12:05:56.393+09:00  INFO 26429 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T12:05:56.393+09:00  INFO 26429 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T12:05:56.481+09:00  INFO 26429 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T12:05:56.482+09:00  INFO 26429 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1758 ms
+2023-10-11T12:05:56.605+09:00  INFO 26429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T12:05:56.897+09:00  INFO 26429 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21f9c6ea
+2023-10-11T12:05:56.899+09:00  INFO 26429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T12:05:56.942+09:00  INFO 26429 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T12:05:57.005+09:00  INFO 26429 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T12:05:57.007+09:00  INFO 26429 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T12:05:57.144+09:00  INFO 26429 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:05:57.306+09:00  INFO 26429 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2ceb68a1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6de33fde)
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@69c33ea2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@59e0d521)
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e3900dc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5ad0c70a)
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2a16d4dc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@75805562)
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13d984ee) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4fedf908)
+2023-10-11T12:05:57.392+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5341641d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@241d1052)
+2023-10-11T12:05:57.393+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b3c0ecb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5bb99d1d)
+2023-10-11T12:05:57.393+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3006bfb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4fd37449)
+2023-10-11T12:05:57.393+09:00 DEBUG 26429 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5402612e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@43445fc6)
+2023-10-11T12:05:57.560+09:00  INFO 26429 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:05:58.229+09:00  INFO 26429 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T12:05:58.233+09:00  INFO 26429 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T12:05:58.653+09:00  WARN 26429 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T12:05:59.108+09:00  INFO 26429 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T12:05:59.117+09:00  INFO 26429 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.217 seconds (process running for 5.871)
+2023-10-11T12:06:04.683+09:00  INFO 26429 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T12:06:04.684+09:00  INFO 26429 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T12:06:04.685+09:00  INFO 26429 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T12:06:04.964+09:00  INFO 26429 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:06:04.690416Z	 요청전문 : 	 응답전문 : 	 처리시간 : 274
+2023-10-11T12:06:37.724+09:00  INFO 26429 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T12:06:37.727+09:00  INFO 26429 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T12:06:37.732+09:00  INFO 26429 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T12:06:40.383+09:00  INFO 26450 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 26450 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T12:06:40.395+09:00  INFO 26450 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T12:06:40.976+09:00  INFO 26450 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T12:06:41.014+09:00  INFO 26450 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2023-10-11T12:06:41.074+09:00  WARN 26450 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T12:06:41.376+09:00  INFO 26450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T12:06:41.386+09:00  INFO 26450 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T12:06:41.386+09:00  INFO 26450 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T12:06:41.474+09:00  INFO 26450 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T12:06:41.475+09:00  INFO 26450 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1042 ms
+2023-10-11T12:06:41.581+09:00  INFO 26450 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T12:06:41.842+09:00  INFO 26450 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ea1aa52
+2023-10-11T12:06:41.844+09:00  INFO 26450 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T12:06:41.885+09:00  INFO 26450 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T12:06:41.929+09:00  INFO 26450 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T12:06:41.931+09:00  INFO 26450 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T12:06:42.041+09:00  INFO 26450 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:06:42.173+09:00  INFO 26450 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T12:06:42.248+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3460e4ed) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2efcc0b3)
+2023-10-11T12:06:42.248+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4a453f8d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60a6840c)
+2023-10-11T12:06:42.248+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@53525379) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1be3f8f8)
+2023-10-11T12:06:42.249+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@78b9155e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2ceb68a1)
+2023-10-11T12:06:42.249+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6de33fde) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@69c33ea2)
+2023-10-11T12:06:42.249+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@59e0d521) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2e3900dc)
+2023-10-11T12:06:42.249+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5ad0c70a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2a16d4dc)
+2023-10-11T12:06:42.249+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@75805562) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13d984ee)
+2023-10-11T12:06:42.250+09:00 DEBUG 26450 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4fedf908) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5341641d)
+2023-10-11T12:06:42.397+09:00  INFO 26450 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T12:06:42.891+09:00  INFO 26450 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T12:06:42.893+09:00  INFO 26450 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T12:06:43.185+09:00  WARN 26450 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T12:06:43.491+09:00  INFO 26450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T12:06:43.498+09:00  INFO 26450 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 3.52 seconds (process running for 4.031)
+2023-10-11T12:06:56.700+09:00  INFO 26450 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T12:06:56.700+09:00  INFO 26450 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T12:06:56.702+09:00  INFO 26450 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T12:06:56.986+09:00  INFO 26450 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:06:56.706750Z	 요청전문 : 	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":4,"last":true,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":4,"first":true,"empty":false},"timestamp":1696993616914}	 처리시간 : 279
+2023-10-11T12:08:21.185+09:00  INFO 26450 --- [http-nio-8099-exec-5] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:08:21.153647Z	 요청전문 : 	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},"timestamp":1696993701183}	 처리시간 : 32
+2023-10-11T12:08:32.668+09:00 ERROR 26450 --- [http-nio-8099-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: 이미 존재하는 이메일입니다.] with root cause
+
+java.lang.RuntimeException: 이미 존재하는 이메일입니다.
+	at com.lfin.assignment.service.UserService.createUser(UserService.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.12.jar:6.0.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.12.jar:6.0.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751) ~[spring-aop-6.0.12.jar:6.0.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703) ~[spring-aop-6.0.12.jar:6.0.12]
+	at com.lfin.assignment.service.UserService$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+	at com.lfin.assignment.controller.UserController.createUser(UserController.java:19) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.13.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.12.jar:6.0.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.13.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at com.lfin.assignment.common.filters.LoggingReqResFilter.doFilter(LoggingReqResFilter.java:43) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.12.jar:6.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.13.jar:10.1.13]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-10-11T12:08:45.926+09:00  INFO 26450 --- [http-nio-8099-exec-8] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:08:45.856432Z	 요청전문 : {
+   "email" : "whdk0@naver.com",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1696993725924}	 처리시간 : 69
+2023-10-11T12:09:11.103+09:00  INFO 26450 --- [http-nio-8099-exec-9] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T03:09:11.089269Z	 요청전문 : {
+   "name":"dongdongdong",
+   "tel": "010-2343-3434",
+   "password": "12345"
+}	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1696993751102}	 처리시간 : 14
