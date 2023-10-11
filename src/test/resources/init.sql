@@ -1,12 +1,15 @@
 create table user
 (
-    user_id  bigint auto_increment
+    id         bigint auto_increment
         primary key,
-    email    varchar(255) not null,
-    password varchar(255) not null,
-    name     varchar(50)  not null,
-    tel      varchar(100) null
+    email      varchar(255) not null,
+    password   varchar(255) not null,
+    name       varchar(50)  not null,
+    tel        varchar(100) null,
+    created_at datetime     null,
+    updated_at datetime     null
 );
+
 
 
 INSERT INTO assignment.user (user_id, email, password, name, tel) VALUES (2, 'whdk2340@naver.com', '5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5', 'gildong', '010-1123-1234');

@@ -13,6 +13,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +27,7 @@ import java.util.stream.Collectors;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public void createUser(UserVO userVO){
@@ -41,9 +45,9 @@ public class UserService {
      * @return
      */
     public Page<UserExceptPasswordVO> findAll(Pageable pageable){
-        List<User> all = userRepository.findAll();
+        Page<User> all = userRepository.findAll(pageable);
         List<UserExceptPasswordVO> collect = all.stream().map(User::convertToVo).collect(Collectors.toList());
-        return new PageImpl<>(collect, pageable, all.size());
+        return new PageImpl<>(collect, pageable, all.getTotalElements());
     }
 
     public UserExceptPasswordVO findById(Long id){
@@ -57,7 +61,7 @@ public class UserService {
                 throw new NotChangingValueException();
             }
             if (!StringUtils.isEmpty(userVO.getPassword())) {
-                String newPassword = userVO.hashPassword(userVO.getPassword());
+                String newPassword = userVO.encodeBcrypt(userVO.getPassword());
                 user.setPassword(newPassword);
             }
 
@@ -81,9 +85,7 @@ public class UserService {
     public boolean checkUserInfo(UserVO userVO){
         //기존 암호와 동일한지 확인
         User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow(ResourceNotFoundException::new);
-        String currentPassword = user.getPassword();
-        String inputPassword = userVO.hashPassword(userVO.getPassword());
-        if(currentPassword.equals(inputPassword)){
+        if(passwordEncoder.matches(userVO.getPassword(), user.getPassword())){
             return true;
         }else throw new NotMatchingValueException();
     }

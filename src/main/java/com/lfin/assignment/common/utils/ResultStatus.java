@@ -8,9 +8,9 @@ import lombok.ToString;
 @RequiredArgsConstructor
 @ToString
 public enum ResultStatus {
-    REQUEST_SUCCESS("200", "정상적으로 처리되었습니다."),
+    REQUEST_SUCCESS("2000", "정상적으로 처리되었습니다."),
 
-    INTERNAL_SERVER_ERROR("500", "내부 서버 오류가 발생했습니다."),
+    INTERNAL_SERVER_ERROR("5000", "내부 서버 오류가 발생했습니다."),
 
     CLIENT_INVALID_REQUEST("1002", "형식이 올바르지 않습니다."),
     CLIENT_NOT_CHANGE_VALUE_REQUEST("1003", "해당 값을 변경할 수 없습니다."),

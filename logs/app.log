@@ -2583,3 +2583,645 @@ java.lang.RuntimeException: 이미 존재하는 이메일입니다.
 2023-10-11T17:57:15.122+09:00  INFO 36840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2023-10-11T17:57:15.174+09:00  INFO 36840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 2023-10-11T18:03:07.604+09:00  WARN 31240 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s387ms).
+2023-10-11T18:40:25.855+09:00  INFO 38675 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 38675 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T18:40:25.869+09:00  INFO 38675 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T18:40:27.049+09:00  INFO 38675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T18:40:27.109+09:00  INFO 38675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-10-11T18:40:27.201+09:00  WARN 38675 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T18:40:27.648+09:00  INFO 38675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T18:40:27.657+09:00  INFO 38675 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T18:40:27.657+09:00  INFO 38675 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T18:40:27.733+09:00  INFO 38675 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T18:40:27.733+09:00  INFO 38675 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1769 ms
+2023-10-11T18:40:27.870+09:00  INFO 38675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T18:40:28.210+09:00  INFO 38675 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38de5daf
+2023-10-11T18:40:28.213+09:00  INFO 38675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T18:40:28.261+09:00  INFO 38675 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T18:40:28.336+09:00  INFO 38675 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T18:40:28.338+09:00  INFO 38675 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T18:40:28.497+09:00  INFO 38675 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:40:28.682+09:00  INFO 38675 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T18:40:28.816+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b339a08) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d556461)
+2023-10-11T18:40:28.816+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5a583720) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ed19b69)
+2023-10-11T18:40:28.816+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@59a5bb61) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6f65aa58)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@749f61a3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@36d7a68a)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@42dd7d82) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2838eb)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fb5d334) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@45dc7be)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2d459bda) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6ceb11f9)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4d664323) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@27ec0d06)
+2023-10-11T18:40:28.817+09:00 DEBUG 38675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2676d96a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@12266084)
+2023-10-11T18:40:28.977+09:00  INFO 38675 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:40:29.726+09:00  INFO 38675 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T18:40:29.729+09:00  INFO 38675 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:40:30.250+09:00  WARN 38675 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T18:40:30.270+09:00  WARN 38675 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8b3821ab-d129-489a-a7ec-842d1158ec02
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-11T18:40:30.405+09:00  INFO 38675 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52518ee1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fe38d1e, org.springframework.security.web.context.SecurityContextHolderFilter@11e75942, org.springframework.security.web.header.HeaderWriterFilter@20724c21, org.springframework.security.web.csrf.CsrfFilter@88e85a, org.springframework.security.web.authentication.logout.LogoutFilter@f047670, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f93ec02, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6805415d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1a4564a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1299fed3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a6d6308, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6edb093f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@157267db, org.springframework.security.web.access.ExceptionTranslationFilter@1a23136f, org.springframework.security.web.access.intercept.AuthorizationFilter@18419ab7]
+2023-10-11T18:40:30.916+09:00  INFO 38675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T18:40:30.926+09:00  INFO 38675 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 6.32 seconds (process running for 7.044)
+2023-10-11T18:40:56.328+09:00  INFO 38675 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T18:40:56.328+09:00  INFO 38675 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T18:40:56.330+09:00  INFO 38675 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T18:49:26.597+09:00  INFO 38675 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:49:26.599+09:00  INFO 38675 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T18:49:26.608+09:00  INFO 38675 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T18:51:33.192+09:00  INFO 39060 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39060 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T18:51:33.195+09:00  INFO 39060 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T18:51:34.500+09:00  INFO 39060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T18:51:34.557+09:00  INFO 39060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-11T18:51:34.636+09:00  WARN 39060 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T18:51:35.073+09:00  INFO 39060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T18:51:35.080+09:00  INFO 39060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T18:51:35.080+09:00  INFO 39060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T18:51:35.153+09:00  INFO 39060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T18:51:35.176+09:00  INFO 39060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1897 ms
+2023-10-11T18:51:35.312+09:00  INFO 39060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T18:51:35.638+09:00  INFO 39060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d9d2119
+2023-10-11T18:51:35.640+09:00  INFO 39060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T18:51:35.686+09:00  INFO 39060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T18:51:35.752+09:00  INFO 39060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T18:51:35.754+09:00  INFO 39060 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T18:51:35.914+09:00  INFO 39060 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:51:36.083+09:00  INFO 39060 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T18:51:36.185+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56299b0e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ca278bc)
+2023-10-11T18:51:36.204+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@283e1759) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2acb1264)
+2023-10-11T18:51:36.205+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@30a01dd8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f68e4e8)
+2023-10-11T18:51:36.205+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@47b4ac83) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@351ede23)
+2023-10-11T18:51:36.205+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5604b85) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5df7a065)
+2023-10-11T18:51:36.205+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7c69e1e1)
+2023-10-11T18:51:36.205+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1bc6c20d)
+2023-10-11T18:51:36.206+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39b85a73)
+2023-10-11T18:51:36.206+09:00 DEBUG 39060 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T18:51:36.370+09:00  INFO 39060 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:51:37.094+09:00  INFO 39060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T18:51:37.097+09:00  INFO 39060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:51:37.590+09:00  WARN 39060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T18:51:38.072+09:00  INFO 39060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T18:51:38.081+09:00  INFO 39060 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 6.063 seconds (process running for 6.673)
+2023-10-11T18:51:50.341+09:00  INFO 39060 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T18:51:50.342+09:00  INFO 39060 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T18:51:50.343+09:00  INFO 39060 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T18:51:50.604+09:00  WARN 39060 --- [http-nio-8099-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2023-10-11T18:51:50.617+09:00 ERROR 39060 --- [http-nio-8099-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'u1_0.id' in 'field list'
+2023-10-11T18:51:50.627+09:00 DEBUG 39060 --- [http-nio-8099-exec-2] o.h.sql.results.spi.LoadContexts         : LoadContexts still contained JdbcValuesSourceProcessingState registrations on cleanup
+2023-10-11T18:51:50.671+09:00  INFO 39060 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T09:51:50.348371Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"500","message":"내부 서버 오류가 발생했습니다.","data":null,"timestamp":1697017910640}	 처리시간 : 323
+2023-10-11T18:53:35.069+09:00  INFO 39060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:53:35.071+09:00  INFO 39060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T18:53:35.077+09:00  INFO 39060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T18:53:37.557+09:00  INFO 39143 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39143 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T18:53:37.559+09:00  INFO 39143 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T18:53:38.245+09:00  INFO 39143 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T18:53:38.293+09:00  INFO 39143 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-11T18:53:38.372+09:00  WARN 39143 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T18:53:38.786+09:00  INFO 39143 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T18:53:38.795+09:00  INFO 39143 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T18:53:38.795+09:00  INFO 39143 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T18:53:38.876+09:00  INFO 39143 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T18:53:38.876+09:00  INFO 39143 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1273 ms
+2023-10-11T18:53:39.003+09:00  INFO 39143 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T18:53:39.298+09:00  INFO 39143 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a484710
+2023-10-11T18:53:39.300+09:00  INFO 39143 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T18:53:39.344+09:00  INFO 39143 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T18:53:39.407+09:00  INFO 39143 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T18:53:39.410+09:00  INFO 39143 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T18:53:39.524+09:00  INFO 39143 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:53:39.669+09:00  INFO 39143 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@13f4048e)
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dc9a56e)
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b19712f)
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@714c74eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79)
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f0cab82) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fcc3745)
+2023-10-11T18:53:39.789+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d35ff7b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ef31221)
+2023-10-11T18:53:39.790+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e9e0c6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a819901)
+2023-10-11T18:53:39.790+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@588d630d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@eb91027)
+2023-10-11T18:53:39.790+09:00 DEBUG 39143 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@459d2ee6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5342eec5)
+2023-10-11T18:53:39.956+09:00  INFO 39143 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:53:40.601+09:00  INFO 39143 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T18:53:40.603+09:00  INFO 39143 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:53:41.044+09:00  WARN 39143 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T18:53:41.516+09:00  INFO 39143 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T18:53:41.525+09:00  INFO 39143 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.369 seconds (process running for 4.923)
+2023-10-11T18:53:48.349+09:00  INFO 39143 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T18:53:48.350+09:00  INFO 39143 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T18:53:48.351+09:00  INFO 39143 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T18:53:48.609+09:00  WARN 39143 --- [http-nio-8099-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2023-10-11T18:53:48.610+09:00 ERROR 39143 --- [http-nio-8099-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'u1_0.id' in 'field list'
+2023-10-11T18:53:48.618+09:00 DEBUG 39143 --- [http-nio-8099-exec-2] o.h.sql.results.spi.LoadContexts         : LoadContexts still contained JdbcValuesSourceProcessingState registrations on cleanup
+2023-10-11T18:53:48.648+09:00  INFO 39143 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T09:53:48.356219Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"500","message":"내부 서버 오류가 발생했습니다.","data":null,"timestamp":1697018028621}	 처리시간 : 291
+2023-10-11T18:55:49.681+09:00  INFO 39143 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:55:49.685+09:00  INFO 39143 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T18:55:49.693+09:00  INFO 39143 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T18:55:53.461+09:00  INFO 39221 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39221 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T18:55:53.465+09:00  INFO 39221 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T18:55:54.716+09:00  INFO 39221 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T18:55:54.783+09:00  INFO 39221 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-10-11T18:55:54.896+09:00  WARN 39221 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T18:55:55.677+09:00  INFO 39221 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T18:55:55.687+09:00  INFO 39221 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T18:55:55.688+09:00  INFO 39221 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T18:55:55.774+09:00  INFO 39221 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T18:55:55.774+09:00  INFO 39221 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2236 ms
+2023-10-11T18:55:55.910+09:00  INFO 39221 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T18:55:56.213+09:00  INFO 39221 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d30d23
+2023-10-11T18:55:56.214+09:00  INFO 39221 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T18:55:56.259+09:00  INFO 39221 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T18:55:56.325+09:00  INFO 39221 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T18:55:56.327+09:00  INFO 39221 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T18:55:56.471+09:00  INFO 39221 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:55:56.619+09:00  INFO 39221 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@510e4d79) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2f0cab82)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7fcc3745) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d35ff7b)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ef31221) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e9e0c6)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a819901) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@588d630d)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@eb91027) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@459d2ee6)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5342eec5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@60e47aab)
+2023-10-11T18:55:56.707+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@261a66b8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@adc8683)
+2023-10-11T18:55:56.708+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4eac65db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@dde6f87)
+2023-10-11T18:55:56.708+09:00 DEBUG 39221 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7884f722) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16029e2f)
+2023-10-11T18:55:56.870+09:00  INFO 39221 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T18:55:57.529+09:00  INFO 39221 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T18:55:57.532+09:00  INFO 39221 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T18:55:57.987+09:00  WARN 39221 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T18:55:58.449+09:00  INFO 39221 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T18:55:58.459+09:00  INFO 39221 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.814 seconds (process running for 6.435)
+2023-10-11T18:56:09.256+09:00  INFO 39221 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T18:56:09.257+09:00  INFO 39221 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T18:56:09.258+09:00  INFO 39221 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T18:56:09.684+09:00  WARN 39221 --- [http-nio-8099-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2023-10-11T18:56:09.684+09:00 ERROR 39221 --- [http-nio-8099-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'created_at' in 'field list'
+2023-10-11T18:56:09.725+09:00  INFO 39221 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T09:56:09.262802Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"500","message":"내부 서버 오류가 발생했습니다.","data":null,"timestamp":1697018169696}	 처리시간 : 463
+2023-10-11T19:03:00.768+09:00  INFO 39221 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:03:00.771+09:00  INFO 39221 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:03:00.778+09:00  INFO 39221 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:03:05.637+09:00  INFO 39475 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39475 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:03:05.639+09:00  INFO 39475 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:03:06.948+09:00  INFO 39475 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:03:07.099+09:00  INFO 39475 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:03:07.395+09:00  WARN 39475 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:03:07.941+09:00  INFO 39475 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:03:07.952+09:00  INFO 39475 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:03:07.952+09:00  INFO 39475 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:03:08.037+09:00  INFO 39475 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:03:08.037+09:00  INFO 39475 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2275 ms
+2023-10-11T19:03:08.175+09:00  INFO 39475 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:03:08.515+09:00  INFO 39475 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a5abd3c
+2023-10-11T19:03:08.517+09:00  INFO 39475 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:03:08.562+09:00  INFO 39475 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:03:08.629+09:00  INFO 39475 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:03:08.631+09:00  INFO 39475 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:03:08.795+09:00  INFO 39475 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:03:08.962+09:00  INFO 39475 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:03:09.074+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c69e1e1)
+2023-10-11T19:03:09.074+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1bc6c20d)
+2023-10-11T19:03:09.074+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39b85a73)
+2023-10-11T19:03:09.074+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T19:03:09.075+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e5b33e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@654b899f)
+2023-10-11T19:03:09.075+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13f4048e)
+2023-10-11T19:03:09.075+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6dc9a56e)
+2023-10-11T19:03:09.075+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b19712f)
+2023-10-11T19:03:09.075+09:00 DEBUG 39475 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@714c74eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79)
+2023-10-11T19:03:09.247+09:00  INFO 39475 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:03:09.912+09:00  INFO 39475 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:03:09.915+09:00  INFO 39475 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:03:10.366+09:00  WARN 39475 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:03:10.803+09:00  INFO 39475 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:03:10.813+09:00  INFO 39475 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 6.468 seconds (process running for 7.316)
+2023-10-11T19:03:47.381+09:00  INFO 39475 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:03:47.382+09:00  INFO 39475 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:03:47.388+09:00  INFO 39475 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:03:49.899+09:00  INFO 39514 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39514 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:03:49.901+09:00  INFO 39514 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:03:50.635+09:00  INFO 39514 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:03:50.690+09:00  INFO 39514 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:03:50.767+09:00  WARN 39514 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:03:51.160+09:00  INFO 39514 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:03:51.169+09:00  INFO 39514 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:03:51.169+09:00  INFO 39514 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:03:51.247+09:00  INFO 39514 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:03:51.248+09:00  INFO 39514 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2023-10-11T19:03:51.367+09:00  INFO 39514 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:03:51.665+09:00  INFO 39514 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a5abd3c
+2023-10-11T19:03:51.667+09:00  INFO 39514 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:03:51.713+09:00  INFO 39514 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:03:51.779+09:00  INFO 39514 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:03:51.782+09:00  INFO 39514 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:03:51.919+09:00  INFO 39514 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:03:52.068+09:00  INFO 39514 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:03:52.157+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c69e1e1)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1bc6c20d)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39b85a73)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e5b33e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@654b899f)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13f4048e)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6dc9a56e)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b19712f)
+2023-10-11T19:03:52.158+09:00 DEBUG 39514 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@714c74eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79)
+2023-10-11T19:03:52.326+09:00  INFO 39514 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:03:52.960+09:00  INFO 39514 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:03:52.962+09:00  INFO 39514 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:03:53.371+09:00  WARN 39514 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:03:53.828+09:00  INFO 39514 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:03:53.837+09:00  INFO 39514 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.362 seconds (process running for 4.901)
+2023-10-11T19:07:01.148+09:00  INFO 39514 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:07:01.149+09:00  INFO 39514 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:07:01.150+09:00  INFO 39514 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:07:01.612+09:00  INFO 39514 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:07:01.154921Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345",
+   "name":"gildong",
+   "tel": "010-2345-3434"
+}	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1697018821578}	 처리시간 : 457
+2023-10-11T19:07:29.804+09:00  INFO 39514 --- [http-nio-8099-exec-3] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:07:29.784672Z	 요청전문 : {
+   "email" : "1whdk0@naver.com11888",
+   "password": "12344445"
+}	 응답전문 : {"status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1697018849803}	 처리시간 : 19
+2023-10-11T19:08:13.370+09:00  INFO 39514 --- [http-nio-8099-exec-5] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:08:13.276049Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345"
+}	 응답전문 : {"status":"1005","message":"기존 정보와 일치하지 않습니다.","data":null,"timestamp":1697018893369}	 처리시간 : 94
+2023-10-11T19:09:03.032+09:00  INFO 39514 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:09:03.033+09:00  INFO 39514 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:09:03.040+09:00  INFO 39514 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:09:07.057+09:00  INFO 39684 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39684 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:09:07.059+09:00  INFO 39684 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:09:08.176+09:00  INFO 39684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:09:08.258+09:00  INFO 39684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:09:08.444+09:00  WARN 39684 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:09:08.899+09:00  INFO 39684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:09:08.909+09:00  INFO 39684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:09:08.910+09:00  INFO 39684 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:09:08.987+09:00  INFO 39684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:09:08.987+09:00  INFO 39684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+2023-10-11T19:09:09.118+09:00  INFO 39684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:09:09.429+09:00  INFO 39684 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f5c30b1
+2023-10-11T19:09:09.431+09:00  INFO 39684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:09:09.473+09:00  INFO 39684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:09:09.525+09:00  INFO 39684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:09:09.528+09:00  INFO 39684 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:09:09.661+09:00  INFO 39684 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:09:09.824+09:00  INFO 39684 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:09:09.921+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6b7c4734) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2f6e92ca)
+2023-10-11T19:09:09.921+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@380fdcf2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@114b203)
+2023-10-11T19:09:09.921+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@8d810f2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@537b3be1)
+2023-10-11T19:09:09.921+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@15d58530) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@31f5b923)
+2023-10-11T19:09:09.922+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@79e2606f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@734cf881)
+2023-10-11T19:09:09.922+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4a890fdd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56299b0e)
+2023-10-11T19:09:09.922+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ca278bc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@283e1759)
+2023-10-11T19:09:09.922+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2acb1264) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@30a01dd8)
+2023-10-11T19:09:09.922+09:00 DEBUG 39684 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f68e4e8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@47b4ac83)
+2023-10-11T19:09:10.096+09:00  INFO 39684 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:09:10.766+09:00  INFO 39684 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:09:10.768+09:00  INFO 39684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:09:11.180+09:00  WARN 39684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:09:11.630+09:00  INFO 39684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:09:11.640+09:00  INFO 39684 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.655 seconds (process running for 6.36)
+2023-10-11T19:09:16.975+09:00  INFO 39684 --- [http-nio-8099-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:09:16.976+09:00  INFO 39684 --- [http-nio-8099-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:09:16.977+09:00  INFO 39684 --- [http-nio-8099-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:09:17.334+09:00  INFO 39684 --- [http-nio-8099-exec-3] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:09:16.981592Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345"
+}	 응답전문 : {"status":"200","message":"정상적으로 처리되었습니다.","data":true,"timestamp":1697018957307}	 처리시간 : 352
+2023-10-11T19:09:34.917+09:00  INFO 39684 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:09:34.919+09:00  INFO 39684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:09:34.925+09:00  INFO 39684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:09:38.388+09:00  INFO 39720 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39720 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:09:38.390+09:00  INFO 39720 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:09:39.151+09:00  INFO 39720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:09:39.206+09:00  INFO 39720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:09:39.292+09:00  WARN 39720 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:09:39.718+09:00  INFO 39720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:09:39.728+09:00  INFO 39720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:09:39.728+09:00  INFO 39720 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:09:39.813+09:00  INFO 39720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:09:39.814+09:00  INFO 39720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2023-10-11T19:09:39.946+09:00  INFO 39720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:09:40.261+09:00  INFO 39720 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a5abd3c
+2023-10-11T19:09:40.263+09:00  INFO 39720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:09:40.306+09:00  INFO 39720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:09:40.362+09:00  INFO 39720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:09:40.364+09:00  INFO 39720 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:09:40.501+09:00  INFO 39720 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:09:40.662+09:00  INFO 39720 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:09:40.744+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c69e1e1)
+2023-10-11T19:09:40.745+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1bc6c20d)
+2023-10-11T19:09:40.745+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39b85a73)
+2023-10-11T19:09:40.745+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T19:09:40.745+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e5b33e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@654b899f)
+2023-10-11T19:09:40.745+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13f4048e)
+2023-10-11T19:09:40.746+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6dc9a56e)
+2023-10-11T19:09:40.746+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b19712f)
+2023-10-11T19:09:40.746+09:00 DEBUG 39720 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@714c74eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79)
+2023-10-11T19:09:40.905+09:00  INFO 39720 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:09:41.613+09:00  INFO 39720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:09:41.616+09:00  INFO 39720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:09:42.086+09:00  WARN 39720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:09:42.610+09:00  INFO 39720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:09:42.620+09:00  INFO 39720 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.099 seconds (process running for 5.804)
+2023-10-11T19:09:47.041+09:00  INFO 39720 --- [http-nio-8099-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:09:47.041+09:00  INFO 39720 --- [http-nio-8099-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:09:47.042+09:00  INFO 39720 --- [http-nio-8099-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:09:47.410+09:00  INFO 39720 --- [http-nio-8099-exec-3] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:09:47.046620Z	 요청전문 : {
+   "email" : "2whdk0@naver.com11",
+   "password": "12345"
+}	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":true,"timestamp":1697018987383}	 처리시간 : 364
+2023-10-11T19:12:23.497+09:00  INFO 39720 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:12:23.499+09:00  INFO 39720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:12:23.505+09:00  INFO 39720 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:12:26.758+09:00  INFO 39812 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 39812 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:12:26.760+09:00  INFO 39812 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:12:27.777+09:00  INFO 39812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:12:27.825+09:00  INFO 39812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:12:27.900+09:00  WARN 39812 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:12:28.300+09:00  INFO 39812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:12:28.309+09:00  INFO 39812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:12:28.310+09:00  INFO 39812 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:12:28.383+09:00  INFO 39812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:12:28.383+09:00  INFO 39812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
+2023-10-11T19:12:28.505+09:00  INFO 39812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:12:28.800+09:00  INFO 39812 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a5abd3c
+2023-10-11T19:12:28.802+09:00  INFO 39812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:12:28.845+09:00  INFO 39812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:12:28.903+09:00  INFO 39812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:12:28.909+09:00  INFO 39812 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:12:29.040+09:00  INFO 39812 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:12:29.195+09:00  INFO 39812 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7c69e1e1)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1bc6c20d)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39b85a73)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e5b33e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@654b899f)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13f4048e)
+2023-10-11T19:12:29.286+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6dc9a56e)
+2023-10-11T19:12:29.287+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b19712f)
+2023-10-11T19:12:29.287+09:00 DEBUG 39812 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@714c74eb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79)
+2023-10-11T19:12:29.448+09:00  INFO 39812 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:12:30.091+09:00  INFO 39812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:12:30.093+09:00  INFO 39812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:12:30.524+09:00  WARN 39812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:12:30.962+09:00  INFO 39812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:12:30.991+09:00  INFO 39812 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.984 seconds (process running for 5.54)
+2023-10-11T19:25:22.825+09:00  INFO 39812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:25:22.830+09:00  INFO 39812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:25:22.844+09:00  INFO 39812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:25:25.610+09:00  INFO 40235 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40235 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:25:25.611+09:00  INFO 40235 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:25:26.329+09:00  INFO 40235 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:25:26.377+09:00  INFO 40235 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:25:26.446+09:00  WARN 40235 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:25:26.843+09:00  INFO 40235 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:25:26.852+09:00  INFO 40235 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:25:26.853+09:00  INFO 40235 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:25:26.929+09:00  INFO 40235 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:25:26.930+09:00  INFO 40235 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2023-10-11T19:25:27.061+09:00  INFO 40235 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:25:27.398+09:00  INFO 40235 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c121d4
+2023-10-11T19:25:27.399+09:00  INFO 40235 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:25:27.440+09:00  INFO 40235 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:25:27.499+09:00  INFO 40235 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:25:27.501+09:00  INFO 40235 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:25:27.666+09:00  INFO 40235 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:25:27.837+09:00  INFO 40235 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:25:27.931+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@654b899f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71468613)
+2023-10-11T19:25:27.966+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@13f4048e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5477d90e)
+2023-10-11T19:25:27.966+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dc9a56e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da)
+2023-10-11T19:25:27.966+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b19712f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@714c74eb)
+2023-10-11T19:25:27.966+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@510e4d79) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2f0cab82)
+2023-10-11T19:25:27.966+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fcc3745) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d35ff7b)
+2023-10-11T19:25:27.967+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4ef31221) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4e9e0c6)
+2023-10-11T19:25:27.967+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1a819901) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@588d630d)
+2023-10-11T19:25:27.967+09:00 DEBUG 40235 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@eb91027) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@459d2ee6)
+2023-10-11T19:25:28.151+09:00  INFO 40235 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:25:28.809+09:00  INFO 40235 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:25:28.811+09:00  INFO 40235 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:25:29.219+09:00  WARN 40235 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:25:29.669+09:00  INFO 40235 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:25:29.678+09:00  INFO 40235 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.473 seconds (process running for 5.045)
+2023-10-11T19:25:38.674+09:00  INFO 40235 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:25:38.674+09:00  INFO 40235 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:25:38.675+09:00  INFO 40235 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:25:38.961+09:00  INFO 40235 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:25:38.680161Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":8,"email":"whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":9,"email":"1whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":7,"first":false,"empty":false},"timestamp":1697019938888}	 처리시간 : 281
+2023-10-11T19:26:31.071+09:00  INFO 40235 --- [http-nio-8099-exec-3] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:26:31.058036Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":8,"email":"whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":9,"email":"1whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":7,"first":false,"empty":false},"timestamp":1697019991069}	 처리시간 : 13
+2023-10-11T19:29:36.409+09:00  INFO 40235 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:29:36.411+09:00  INFO 40235 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:29:36.417+09:00  INFO 40235 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:29:38.800+09:00  INFO 40355 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40355 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:29:38.802+09:00  INFO 40355 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:29:39.543+09:00  INFO 40355 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:29:39.599+09:00  INFO 40355 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:29:39.676+09:00  WARN 40355 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:29:40.113+09:00  INFO 40355 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:29:40.122+09:00  INFO 40355 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:29:40.123+09:00  INFO 40355 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:29:40.198+09:00  INFO 40355 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:29:40.199+09:00  INFO 40355 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1353 ms
+2023-10-11T19:29:40.329+09:00  INFO 40355 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:29:40.627+09:00  INFO 40355 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e974b9e
+2023-10-11T19:29:40.629+09:00  INFO 40355 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:29:40.671+09:00  INFO 40355 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:29:40.735+09:00  INFO 40355 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:29:40.737+09:00  INFO 40355 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:29:40.887+09:00  INFO 40355 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:29:41.044+09:00  INFO 40355 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:29:41.139+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@30a01dd8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f68e4e8)
+2023-10-11T19:29:41.139+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@47b4ac83) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@351ede23)
+2023-10-11T19:29:41.139+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5604b85) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5df7a065)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3f45dfec) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7c69e1e1)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7b52b18a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1bc6c20d)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@aedc426) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39b85a73)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5788722f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7a730479)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1e5b33e5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@654b899f)
+2023-10-11T19:29:41.140+09:00 DEBUG 40355 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71468613) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13f4048e)
+2023-10-11T19:29:41.308+09:00  INFO 40355 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:29:42.018+09:00  INFO 40355 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:29:42.020+09:00  INFO 40355 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:29:42.469+09:00  WARN 40355 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:29:42.938+09:00  INFO 40355 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:29:42.947+09:00  INFO 40355 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.563 seconds (process running for 5.182)
+2023-10-11T19:30:12.830+09:00  INFO 40355 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:30:12.834+09:00  INFO 40355 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:30:12.836+09:00  INFO 40355 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-11T19:30:13.183+09:00  INFO 40355 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:30:12.860084Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":8,"email":"whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":9,"email":"1whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":7,"first":false,"empty":false},"timestamp":1697020213108}	 처리시간 : 323
+2023-10-11T19:31:01.704+09:00  INFO 40355 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:31:01.706+09:00  INFO 40355 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:31:01.712+09:00  INFO 40355 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:31:04.157+09:00  INFO 40400 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40400 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:31:04.159+09:00  INFO 40400 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:31:04.879+09:00  INFO 40400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:31:04.931+09:00  INFO 40400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:31:05.004+09:00  WARN 40400 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:31:05.427+09:00  INFO 40400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:31:05.437+09:00  INFO 40400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:31:05.437+09:00  INFO 40400 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:31:05.528+09:00  INFO 40400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:31:05.528+09:00  INFO 40400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1325 ms
+2023-10-11T19:31:05.675+09:00  INFO 40400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:31:06.095+09:00  INFO 40400 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13e00016
+2023-10-11T19:31:06.097+09:00  INFO 40400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:31:06.140+09:00  INFO 40400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:31:06.204+09:00  INFO 40400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:31:06.206+09:00  INFO 40400 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:31:06.389+09:00  INFO 40400 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:31:06.552+09:00  INFO 40400 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:31:06.643+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3a3316b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4db46344)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56c6d515) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@702b656a)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@528f5b7f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ccfac29)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c41b8d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@77ea960f)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f166f2e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ef93e01)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4fafd27e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cd66f6a)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@d512c1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@578b2dec)
+2023-10-11T19:31:06.644+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@66863941) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39f4a7c4)
+2023-10-11T19:31:06.645+09:00 DEBUG 40400 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@111fe921) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ff542a3)
+2023-10-11T19:31:06.825+09:00  INFO 40400 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:31:07.526+09:00  INFO 40400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:31:07.528+09:00  INFO 40400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:31:07.968+09:00  WARN 40400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:31:08.413+09:00  INFO 40400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:31:08.423+09:00  INFO 40400 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.746 seconds (process running for 5.428)
+2023-10-11T19:31:15.366+09:00  INFO 40400 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:31:15.367+09:00  INFO 40400 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:31:15.369+09:00  INFO 40400 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-11T19:32:00.443+09:00  WARN 40400 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s241ms).
+2023-10-11T19:32:34.529+09:00  INFO 40400 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:31:15.373808Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":8,"email":"whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":9,"email":"1whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":7,"first":false,"empty":false},"timestamp":1697020321225}	 처리시간 : 79156
+2023-10-11T19:32:34.661+09:00  INFO 40400 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:32:34.663+09:00  INFO 40400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:32:34.673+09:00  INFO 40400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:32:37.318+09:00  INFO 40464 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40464 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:32:37.319+09:00  INFO 40464 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:32:38.111+09:00  INFO 40464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:32:38.163+09:00  INFO 40464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:32:38.238+09:00  WARN 40464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:32:38.665+09:00  INFO 40464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:32:38.676+09:00  INFO 40464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:32:38.676+09:00  INFO 40464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:32:38.760+09:00  INFO 40464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:32:38.760+09:00  INFO 40464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1398 ms
+2023-10-11T19:32:38.888+09:00  INFO 40464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:32:39.220+09:00  INFO 40464 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@177ede17
+2023-10-11T19:32:39.222+09:00  INFO 40464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:32:39.266+09:00  INFO 40464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:32:39.325+09:00  INFO 40464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:32:39.327+09:00  INFO 40464 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:32:39.475+09:00  INFO 40464 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:32:39.634+09:00  INFO 40464 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56c6d515) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@702b656a)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@528f5b7f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ccfac29)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5c41b8d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77ea960f)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f166f2e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ef93e01)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4fafd27e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cd66f6a)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@d512c1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@578b2dec)
+2023-10-11T19:32:39.733+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@66863941) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39f4a7c4)
+2023-10-11T19:32:39.734+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@111fe921) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ff542a3)
+2023-10-11T19:32:39.734+09:00 DEBUG 40464 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@48ee3c2d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@54387873)
+2023-10-11T19:32:39.901+09:00  INFO 40464 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:32:40.536+09:00  INFO 40464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:32:40.538+09:00  INFO 40464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:32:40.973+09:00  WARN 40464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:32:41.438+09:00  INFO 40464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:32:41.447+09:00  INFO 40464 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.538 seconds (process running for 5.19)
+2023-10-11T19:33:04.271+09:00  INFO 40464 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:33:04.272+09:00  INFO 40464 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:33:04.273+09:00  INFO 40464 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:33:31.263+09:00  WARN 40464 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s940ms).
+2023-10-11T19:39:24.970+09:00  WARN 40464 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m53s707ms).
+2023-10-11T19:39:25.067+09:00  INFO 40464 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:33:04.278106Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"},{"userId":8,"email":"whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":9,"email":"1whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"},{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":7,"first":false,"empty":false},"timestamp":1697020764987}	 처리시간 : 380789
+2023-10-11T19:39:25.179+09:00  INFO 40464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:39:25.181+09:00  INFO 40464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:39:25.188+09:00  INFO 40464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:39:28.944+09:00  INFO 40718 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40718 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:39:28.947+09:00  INFO 40718 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:39:29.962+09:00  INFO 40718 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:39:30.023+09:00  INFO 40718 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:39:30.118+09:00  WARN 40718 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:39:30.617+09:00  INFO 40718 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:39:30.628+09:00  INFO 40718 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:39:30.628+09:00  INFO 40718 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:39:30.717+09:00  INFO 40718 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:39:30.717+09:00  INFO 40718 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1681 ms
+2023-10-11T19:39:30.860+09:00  INFO 40718 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:39:31.240+09:00  INFO 40718 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@591f6f83
+2023-10-11T19:39:31.241+09:00  INFO 40718 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:39:31.285+09:00  INFO 40718 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:39:31.349+09:00  INFO 40718 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:39:31.352+09:00  INFO 40718 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:39:31.523+09:00  INFO 40718 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:39:31.697+09:00  INFO 40718 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:39:31.806+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@40ac0a56) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@25b4754a)
+2023-10-11T19:39:31.806+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6ec3a4c2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@bb50de6)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b6b487c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2d73767e)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5e6522a6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d1cdeb1)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c4551c6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3a3316b6)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4db46344) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@56c6d515)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@702b656a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@528f5b7f)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ccfac29) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c41b8d8)
+2023-10-11T19:39:31.807+09:00 DEBUG 40718 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77ea960f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f166f2e)
+2023-10-11T19:39:31.995+09:00  INFO 40718 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:39:32.728+09:00  INFO 40718 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:39:32.731+09:00  INFO 40718 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:39:33.264+09:00  WARN 40718 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:39:33.756+09:00  INFO 40718 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:39:33.765+09:00  INFO 40718 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 5.658 seconds (process running for 6.465)
+2023-10-11T19:39:34.058+09:00  INFO 40718 --- [http-nio-8099-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:39:34.058+09:00  INFO 40718 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:39:34.059+09:00  INFO 40718 --- [http-nio-8099-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:39:45.113+09:00  INFO 40718 --- [http-nio-8099-exec-1] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:39:34.063780Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":4,"email":"whdk0776@naver.com","name":"444dongdongdong","tel":"010-2343-3434"},{"userId":6,"email":"whdk0000@naver.com","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":1,"pageSize":2,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":2,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":1,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":2,"first":false,"empty":false},"timestamp":1697020785045}	 처리시간 : 11049
+2023-10-11T19:39:45.144+09:00  INFO 40718 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:39:45.147+09:00  INFO 40718 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-11T19:39:45.156+09:00  INFO 40718 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-11T19:40:07.976+09:00  INFO 40750 --- [main] c.lfin.assignment.AssignmentApplication  : Starting AssignmentApplication using Java 19.0.2 with PID 40750 (/Users/ellie/Downloads/assignment/build/classes/java/main started by ellie in /Users/ellie/Downloads/assignment)
+2023-10-11T19:40:07.977+09:00  INFO 40750 --- [main] c.lfin.assignment.AssignmentApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:40:08.720+09:00  INFO 40750 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:40:08.769+09:00  INFO 40750 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-10-11T19:40:08.841+09:00  WARN 40750 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lfin.assignment]' package. Please check your configuration.
+2023-10-11T19:40:09.265+09:00  INFO 40750 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8099 (http)
+2023-10-11T19:40:09.275+09:00  INFO 40750 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T19:40:09.276+09:00  INFO 40750 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T19:40:09.353+09:00  INFO 40750 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T19:40:09.353+09:00  INFO 40750 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1324 ms
+2023-10-11T19:40:09.484+09:00  INFO 40750 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:40:09.794+09:00  INFO 40750 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@424f02b8
+2023-10-11T19:40:09.796+09:00  INFO 40750 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:40:09.835+09:00  INFO 40750 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:40:09.899+09:00  INFO 40750 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:40:09.901+09:00  INFO 40750 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:40:10.039+09:00  INFO 40750 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:40:10.201+09:00  INFO 40750 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6dc9a56e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@287ad0da)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b19712f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@714c74eb)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@510e4d79) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2f0cab82)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7fcc3745) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d35ff7b)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4ef31221) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4e9e0c6)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1a819901) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@588d630d)
+2023-10-11T19:40:10.294+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@eb91027) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@459d2ee6)
+2023-10-11T19:40:10.295+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5342eec5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@60e47aab)
+2023-10-11T19:40:10.295+09:00 DEBUG 40750 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@261a66b8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@adc8683)
+2023-10-11T19:40:10.456+09:00  INFO 40750 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:40:11.121+09:00  INFO 40750 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:40:11.124+09:00  INFO 40750 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:40:11.553+09:00  WARN 40750 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:40:11.995+09:00  INFO 40750 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8099 (http) with context path ''
+2023-10-11T19:40:12.024+09:00  INFO 40750 --- [main] c.lfin.assignment.AssignmentApplication  : Started AssignmentApplication in 4.481 seconds (process running for 4.978)
+2023-10-11T19:40:53.451+09:00  INFO 40750 --- [http-nio-8099-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T19:40:53.451+09:00  INFO 40750 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T19:40:53.452+09:00  INFO 40750 --- [http-nio-8099-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-11T19:40:53.735+09:00  INFO 40750 --- [http-nio-8099-exec-2] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:40:53.457086Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":2,"email":"whdk2340@naver.com","name":"gildong","tel":"010-1123-1234"},{"userId":3,"email":"whdk237@naver.com","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":0,"pageSize":2,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":false,"size":2,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":2,"first":true,"empty":false},"timestamp":1697020853651}	 처리시간 : 278
+2023-10-11T19:41:17.076+09:00  INFO 40750 --- [http-nio-8099-exec-3] c.l.a.c.filters.LoggingReqResFilter      : 클라이언트IP : 0:0:0:0:0:0:0:1	 호출시간 : 2023-10-11T10:41:17.065370Z	 요청전문 : 	 응답전문 : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"content":[{"userId":10,"email":"2whdk0@naver.com11","name":"gildong","tel":"010-2345-3434"}],"pageable":{"pageNumber":3,"pageSize":2,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":6,"paged":true,"unpaged":false},"totalPages":4,"totalElements":7,"last":true,"size":2,"number":3,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":1,"first":false,"empty":false},"timestamp":1697020877074}	 처리시간 : 10

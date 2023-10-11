@@ -24,7 +24,7 @@ class UserTest {
     }
 
     @Test
-    void converToVo(){
+    void convertToVo(){
         User gildong = User.builder()
                 .tel("010-234-2344")
                 .name("고길동")
