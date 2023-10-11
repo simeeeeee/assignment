@@ -30,4 +30,15 @@ public class UserController {
         return ResponseEntity.ok().body(new ApiResult(userService.findById(id)));
     }
 
+    @PutMapping("{id}")
+    public ResponseEntity<ApiResult> update(@PathVariable Long id, @RequestBody UserVO userVO){
+        userService.update(id, userVO);
+        return  ResponseEntity.ok().body(new ApiResult());
+    }
+
+    @PostMapping("/checkUserInfo")
+    public ResponseEntity<ApiResult> checkUserInfo(@RequestBody UserVO userVO){
+        return ResponseEntity.ok().body(new ApiResult(userService.checkUserInfo(userVO)));
+    }
+
 }
