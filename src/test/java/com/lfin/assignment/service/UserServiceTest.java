@@ -14,10 +14,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.ActiveProfiles;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
+@Transactional
 @ActiveProfiles("test")
 @SpringBootTest(classes = {TestDataConfiguration.class})
 class UserServiceTest {
@@ -102,7 +104,7 @@ class UserServiceTest {
         userVO.setName(name);
         userVO.setTel(tel);
         String hashPassword = userVO.hashPassword(password);
-        userVO.setPassword(hashPassword);
+        userVO.setPassword(password);
 
         userService.update(id, userVO);
 
@@ -150,7 +152,7 @@ class UserServiceTest {
         String password = "123";
         UserVO userVO = new UserVO();
         String hashPassword = userVO.hashPassword(password);
-        userVO.setPassword(hashPassword);
+        userVO.setPassword(password);
 
         userService.update(id, userVO);
 
@@ -165,9 +167,11 @@ class UserServiceTest {
             Long id = 3L;
             String name = "test_name";
             String tel = "010-2312-1111";
+            String email = "test@test.com";
             UserVO userVO = new UserVO();
             userVO.setName(name);
             userVO.setTel(tel);
+            userVO.setEmail(email);
 
             userService.update(id, userVO);
 
