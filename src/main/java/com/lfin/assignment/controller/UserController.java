@@ -36,9 +36,9 @@ public class UserController {
         return  ResponseEntity.ok().body(new ApiResult());
     }
 
-    @PostMapping("/checkUserInfo")
-    public ResponseEntity<ApiResult> checkUserInfo(@RequestBody UserVO userVO){
-        return ResponseEntity.ok().body(new ApiResult(userService.checkUserInfo(userVO)));
+    @PostMapping("/checkPassword")
+    public ResponseEntity<ApiResult> checkPassword(@RequestBody UserVO userVO){
+        return ResponseEntity.ok().body(new ApiResult(userService.checkPassword(userVO)));
     }
 
     @DeleteMapping("{id}")

@@ -7,7 +7,8 @@ create table user
     name       varchar(50)  not null,
     tel        varchar(100) null,
     created_at datetime     null,
-    updated_at datetime     null
+    updated_at datetime     null,
+    user_id    binary(16)   null
 );
 
 

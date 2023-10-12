@@ -41,8 +41,6 @@ public class UserService {
     /**
      * 전체 user정보 페이징하여 조회
      * 비밀번호는 조회 목록에 나오지 않도록 mapper활용
-     * @param pageable
-     * @return
      */
     public Page<UserExceptPasswordVO> findAll(Pageable pageable){
         Page<User> all = userRepository.findAll(pageable);
@@ -56,7 +54,7 @@ public class UserService {
 
     public void update(Long id, UserVO userVO){
         User user = userRepository.findById(id).orElseThrow();
-
+            //email값을 아이디처럼 사용하므로 변경하지 못하게 input값 넣었을 때 exception
             if (!StringUtils.isEmpty(userVO.getEmail())) {
                 throw new NotChangingValueException();
             }
@@ -79,10 +77,8 @@ public class UserService {
     /**
      * Email과 password를 입력받아 데이터베이스에 저장된 정보와 일치하는지 check
      * 일치하면 true를 return, 일치하지 않을 시, 예외 발생
-     * @param userVO
-     * @return
      */
-    public boolean checkUserInfo(UserVO userVO){
+    public boolean checkPassword(UserVO userVO){
         //기존 암호와 동일한지 확인
         User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow(ResourceNotFoundException::new);
         if(passwordEncoder.matches(userVO.getPassword(), user.getPassword())){
