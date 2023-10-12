@@ -16,6 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -31,6 +32,8 @@ class UserServiceTest {
     UserService userService;
     @Autowired
     UserRepository userRepository;
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
     @BeforeEach
     void init() throws Exception{
@@ -99,21 +102,21 @@ class UserServiceTest {
         Long id = 3L;
         String name = "test_name";
         String tel = "010-2312-1111";
-        String password = "123";
+        String rawPassword = "123";
         UserVO userVO = new UserVO();
         userVO.setName(name);
         userVO.setTel(tel);
-        String hashPassword = userVO.hashPassword(password);
-        userVO.setPassword(password);
+//        String password = userVO.encodeBcrypt(rawPassword);
+        userVO.setPassword(rawPassword);
 
         userService.update(id, userVO);
 
         User user = userRepository.findById(id).orElseThrow();
 
-        assertEquals(user.getUserId(), id);
+        assertEquals(user.getId(), id);
         assertEquals(user.getTel(), tel);
         assertEquals(user.getName(), name);
-        assertEquals(user.getPassword(), hashPassword);
+        assertTrue(passwordEncoder.matches(rawPassword, user.getPassword()));
     }
 
     @Test
@@ -127,7 +130,7 @@ class UserServiceTest {
 
         User user = userRepository.findById(id).orElseThrow();
 
-        assertEquals(user.getUserId(), id);
+        assertEquals(user.getId(), id);
         assertEquals(user.getName(), name);
     }
 
@@ -142,24 +145,24 @@ class UserServiceTest {
 
         User user = userRepository.findById(id).orElseThrow();
 
-        assertEquals(user.getUserId(), id);
+        assertEquals(user.getId(), id);
         assertEquals(user.getTel(), tel);
     }
 
     @Test
     void updateWithPassword(){
         Long id = 3L;
-        String password = "123";
+        String rawPassword = "123";
         UserVO userVO = new UserVO();
-        String hashPassword = userVO.hashPassword(password);
-        userVO.setPassword(password);
+//        String password = userVO.encodeBcrypt(rawPassword);
+        userVO.setPassword(rawPassword);
 
         userService.update(id, userVO);
 
         User user = userRepository.findById(id).orElseThrow();
 
-        assertEquals(user.getUserId(), id);
-        assertEquals(user.getPassword(), hashPassword);
+        assertEquals(user.getId(), id);
+        assertTrue(passwordEncoder.matches(rawPassword, user.getPassword()));
     }
     @Test
     void changeEmailException(){
@@ -177,7 +180,7 @@ class UserServiceTest {
 
             User user = userRepository.findById(id).orElseThrow();
 
-            assertEquals(user.getUserId(), id);
+            assertEquals(user.getId(), id);
             assertEquals(user.getTel(), tel);
             assertEquals(user.getName(), name);
         });
@@ -192,7 +195,7 @@ class UserServiceTest {
         userVO.setEmail(email);
         userVO.setPassword(password);
 
-        boolean b = userService.checkUserInfo(userVO);
+        boolean b = userService.checkPassword(userVO);
 
         assertTrue(b);
     }
@@ -201,13 +204,13 @@ class UserServiceTest {
     void notMatchingPassword(){
         Assertions.assertThrows(NotMatchingPasswordException.class, () ->{
             String email = "whdk2340@naver.com";
-            String password = "123";
+            String password = "12345";
 
             UserVO userVO = new UserVO();
             userVO.setEmail(email);
             userVO.setPassword(password);
 
-            boolean b = userService.checkUserInfo(userVO);
+            boolean b = userService.checkPassword(userVO);
 
             assertTrue(b);
         });
@@ -223,7 +226,7 @@ class UserServiceTest {
             userVO.setEmail(email);
             userVO.setPassword(password);
 
-            boolean b = userService.checkUserInfo(userVO);
+            boolean b = userService.checkPassword(userVO);
 
             assertTrue(b);
         });

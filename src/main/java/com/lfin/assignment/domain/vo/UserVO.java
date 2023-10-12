@@ -2,8 +2,6 @@ package com.lfin.assignment.domain.vo;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Getter
