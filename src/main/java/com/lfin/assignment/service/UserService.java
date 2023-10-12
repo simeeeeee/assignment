@@ -56,7 +56,7 @@ public class UserService {
 
     public void update(Long id, UserVO userVO){
         User user = userRepository.findById(id).orElseThrow();
-
+            //email값을 아이디처럼 사용하므로 변경하지 못하게 input값 넣었을 때 exception
             if (!StringUtils.isEmpty(userVO.getEmail())) {
                 throw new NotChangingValueException();
             }

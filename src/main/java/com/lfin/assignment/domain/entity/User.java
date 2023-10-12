@@ -17,6 +17,9 @@ public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Embedded
+    @Column(columnDefinition = "BINARY(16)")
+    private UserId userId;
     @NotEmpty
     @Column(unique = true)
     private String email;
@@ -28,6 +31,7 @@ public class User extends BaseTimeEntity {
 
     public static User createUser(UserVO userVO){
         return User.builder()
+                .userId(UserId.create())
                 .email(userVO.getEmail())
                 .password(userVO.encodeBcrypt(userVO.getPassword()))
                 .name(userVO.getName())
