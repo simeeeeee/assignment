@@ -373,3 +373,6 @@
    "password": "123"
 }	 responseBody : {"status":"2000","message":"정상적으로 처리되었습니다.","data":true,"timestamp":1697080160410}	 duration : 100
 2023-10-12T12:09:33.012+09:00  INFO 45615 --- [http-nio-8099-exec-7] c.l.a.c.filters.LoggingReqResFilter      : remoteAddr : 0:0:0:0:0:0:0:1	 start : 2023-10-12T03:09:32.957458Z	 requestBody : 	 responseBody : {"status":"2000","message":"정상적으로 처리되었습니다.","data":{"userId":12,"email":"whdk2340@naver.com","name":"dongdongdong","tel":"010-2343-3434"},"timestamp":1697080173010}	 duration : 55
+2023-10-12T12:12:42.116+09:00  INFO 45615 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-12T12:12:42.118+09:00  INFO 45615 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-12T12:12:42.123+09:00  INFO 45615 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
