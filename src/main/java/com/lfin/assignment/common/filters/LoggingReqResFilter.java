@@ -53,7 +53,7 @@ public class LoggingReqResFilter implements Filter {
         //시간
         long duration = Duration.between(start, Instant.now()).toMillis(); //처리시간
 
-        loggger.info("클라이언트IP : {}\t 호출시간 : {}\t 요청전문 : {}\t 응답전문 : {}\t 처리시간 : {}",
+        loggger.info("remoteAddr : {}\t start : {}\t requestBody : {}\t responseBody : {}\t duration : {}",
                 remoteAddr, start, requestBody, responseBody, duration);
     }
 
