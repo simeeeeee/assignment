@@ -1,9 +1,8 @@
 package com.lfin.assignment.service;
 
 import com.lfin.assignment.common.TestDataConfiguration;
-import com.lfin.assignment.common.exceptions.ExistingValueException;
-import com.lfin.assignment.common.exceptions.NotChangingValueException;
-import com.lfin.assignment.common.exceptions.NotMatchingValueException;
+import com.lfin.assignment.common.exceptions.NotChangingEmailException;
+import com.lfin.assignment.common.exceptions.NotMatchingPasswordException;
 import com.lfin.assignment.common.exceptions.ResourceNotFoundException;
 import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
@@ -164,7 +163,7 @@ class UserServiceTest {
     }
     @Test
     void changeEmailException(){
-        Assertions.assertThrows(NotChangingValueException.class, () -> {
+        Assertions.assertThrows(NotChangingEmailException.class, () -> {
             Long id = 3L;
             String name = "test_name";
             String tel = "010-2312-1111";
@@ -200,7 +199,7 @@ class UserServiceTest {
 
     @Test
     void notMatchingPassword(){
-        Assertions.assertThrows(NotMatchingValueException.class, () ->{
+        Assertions.assertThrows(NotMatchingPasswordException.class, () ->{
             String email = "whdk2340@naver.com";
             String password = "123";
 

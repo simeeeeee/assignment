@@ -1,8 +1,8 @@
 package com.lfin.assignment.service;
 
-import com.lfin.assignment.common.exceptions.ExistingValueException;
-import com.lfin.assignment.common.exceptions.NotChangingValueException;
-import com.lfin.assignment.common.exceptions.NotMatchingValueException;
+import com.lfin.assignment.common.exceptions.ExistingEmailException;
+import com.lfin.assignment.common.exceptions.NotChangingEmailException;
+import com.lfin.assignment.common.exceptions.NotMatchingPasswordException;
 import com.lfin.assignment.common.exceptions.ResourceNotFoundException;
 import com.lfin.assignment.domain.entity.User;
 import com.lfin.assignment.domain.vo.UserExceptPasswordVO;
@@ -13,8 +13,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,7 +33,7 @@ public class UserService {
         if(!userRepository.existsByEmail(userVO.getEmail())){
             User user = User.createUser(userVO);
             userRepository.save(user);
-        }else throw new ExistingValueException();
+        }else throw new ExistingEmailException();
     }
 
     /**
@@ -56,7 +54,7 @@ public class UserService {
         User user = userRepository.findById(id).orElseThrow();
             //email값을 아이디처럼 사용하므로 변경하지 못하게 input값 넣었을 때 exception
             if (!StringUtils.isEmpty(userVO.getEmail())) {
-                throw new NotChangingValueException();
+                throw new NotChangingEmailException();
             }
             if (!StringUtils.isEmpty(userVO.getPassword())) {
                 String newPassword = userVO.encodeBcrypt(userVO.getPassword());
@@ -83,7 +81,7 @@ public class UserService {
         User user = userRepository.findByEmail(userVO.getEmail()).orElseThrow(ResourceNotFoundException::new);
         if(passwordEncoder.matches(userVO.getPassword(), user.getPassword())){
             return true;
-        }else throw new NotMatchingValueException();
+        }else throw new NotMatchingPasswordException();
     }
 
     public void deletedById(Long id){
